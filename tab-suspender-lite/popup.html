@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tab Suspender Lite</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <h1>Tab Suspender Lite</h1>
+
+      <form id="delay-form" class="delay-form">
+        <label for="delay">闲置后自动休眠（分钟）</label>
+        <div class="inline-controls">
+          <input id="delay" type="number" min="1" max="10080" step="1" required>
+          <button type="submit">保存</button>
+        </div>
+      </form>
+
+      <section class="whitelist-section">
+        <h2>白名单网站</h2>
+        <button id="add-current" class="secondary" type="button">加入当前网站</button>
+        <form id="domain-form" class="domain-form">
+          <label class="sr-only" for="domain">域名或网址</label>
+          <input id="domain" type="text" placeholder="example.com" autocomplete="off" required>
+          <button type="submit">添加</button>
+        </form>
+        <p id="empty" class="empty">暂无白名单网站</p>
+        <ul id="whitelist"></ul>
+      </section>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+      <p class="privacy">白名单与设置仅保存在本机</p>
+    </main>
+
+    <script src="utils.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

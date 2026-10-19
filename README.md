@@ -7,6 +7,7 @@ Chrome 浏览器扩展 Monorepo。每个扩展使用独立的一级子目录，�
 | 目录 | 说明 |
 | --- | --- |
 | [`immersive-lite/`](immersive-lite/) | 极简沉浸式翻译：整页双语翻译与还原。 |
+| [`tab-suspender-lite/`](tab-suspender-lite/) | 极简标签页休眠：自动释放闲置标签内存，支持白名单与未保存表单保护。 |
 
 ## 本地加载
 
