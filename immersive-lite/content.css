@@ -1,0 +1,10 @@
+/* 译文样式:置于原文下方,弱化但不突兀,随页面明暗自适应 */
+.immv-trans {
+  display: block;
+  margin: 0.3em 0 0;
+  font-size: 0.94em;
+  line-height: inherit;
+  letter-spacing: normal;
+  text-transform: none;
+  opacity: 0.82;
+}
