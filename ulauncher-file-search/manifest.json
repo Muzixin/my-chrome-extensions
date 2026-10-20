@@ -1,0 +1,30 @@
+{
+    "required_api_version": "^2.0.0",
+    "name": "File Search (EN/CN)",
+    "description": "按文件名搜索全盘文件,支持英文、中文、拼音全拼与拼音首字母(基于 plocate 索引)",
+    "developer_name": "gt",
+    "icon": "images/icon.svg",
+    "preferences": [
+        {
+            "id": "file_search_kw",
+            "type": "keyword",
+            "name": "File Search",
+            "description": "输入文件名 / 拼音 / 拼音首字母来搜索文件",
+            "default_value": "f"
+        },
+        {
+            "id": "max_results",
+            "type": "input",
+            "name": "Max results / 最大结果数",
+            "description": "每次搜索最多显示的结果条数(1-50)",
+            "default_value": "10"
+        },
+        {
+            "id": "exclude_dirs",
+            "type": "input",
+            "name": "Exclude paths / 排除路径",
+            "description": "逗号分隔的路径子串,包含这些子串的结果不显示",
+            "default_value": "/.cache/,/.git/,/snap/"
+        }
+    ]
+}

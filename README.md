@@ -9,6 +9,12 @@ Chrome 浏览器扩展 Monorepo。每个扩展使用独立的一级子目录，�
 | [`immersive-lite/`](immersive-lite/) | 极简沉浸式翻译：整页双语翻译与还原。 |
 | [`tab-suspender-lite/`](tab-suspender-lite/) | 极简标签页休眠：自动释放闲置标签内存，支持白名单与未保存表单保护。 |
 
+## 其他桌面工具插件
+
+| 目录 | 说明 |
+| --- | --- |
+| [`ulauncher-file-search/`](ulauncher-file-search/) | **Ulauncher 插件**(Linux 启动器,非 Chrome 扩展):全盘文件名搜索,支持英文、中文、拼音全拼与首字母,基于 plocate 索引。安装方式见其 README。 |
+
 ## 本地加载
 
 1. 打开 `chrome://extensions` 并开启「开发者模式」。
